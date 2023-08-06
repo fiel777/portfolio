@@ -23,24 +23,20 @@ function Navbar() {
   return (
     <div className="py-6 shadow-sm font-primary w-full sticky top-0 dark:bg-slate-800 dark:text-white bg-white     ">
       <div className="flex justify-between px-4 items-center sm:px-12 lg:px-12 lg:max-w-screen-lg m-auto relative">
-        <h1 className="text-sm font-bold uppercase sm:text-lg lg:text-2xl ">
+        <h1 className="text-sm font-bold uppercase sm:text-lg lg:text-2xl z-10 ">
           fiel
         </h1>
-        <div
-          className={`flex gap-4 sm:text-lg lg:text-xl  ${
-            bar ? "sm:text-white" : "sm:text-black"
-          }`}
-        >
-          <button className="cursor-pointer z-20 " onClick={handleThemeChange}>
-            {theme === "dark" ? <MdLightMode /> : <MdOutlineDarkMode />}
+        <div className={`flex gap-4 sm:text-lg `}>
+          <button className={`cursor-pointer z-20 ${bar ? "sm:text-white" : "sm:text-black" }`}  onClick={handleThemeChange}>
+            {theme === "dark"  ? <MdLightMode className={` ${bar ? "sm:text-black" : "sm:text-white"}`} /> : <MdOutlineDarkMode className=""/>}
           </button>
-          <button className="cursor-pointer z-20" onClick={() => setbar(!bar)}>
-            {bar ? <TfiClose className="" /> : <FaBarsStaggered className="" />}
+          <button className="cursor-pointer z-20 dark:text-white text-black" onClick={() => setbar(!bar)}>
+            {bar ? <TfiClose className="sm:text-white sm:dark:text-black" /> : <FaBarsStaggered className="" />}
           </button>
         </div>
         <div
-          className={`fixed sm:inset-x-auto bg-white inset-0  sm:absolute  sm:bg-slate-900  sm:top-[-0.35rem] sm:w-[350px] sm:right-7 sm:h-[450px] sm:text-white  transition-all duration-300 delay-100 ${
-            bar ? "opacity-100" : "opacity-0"
+          className={`fixed sm:inset-x-auto bg-white dark:bg-slate-900 dark:text-white inset-0 sm:absolute  sm:bg-slate-900 sm:dark:bg-white sm:dark:text-black  sm:top-[-0.35rem] sm:w-[350px] sm:right-7 sm:h-[450px]  transition-all duration-300 sm:text-white ${
+            bar ? "opacity-100" : "opacity-0 origin-top-right scale-x-50 scale-y-50 transition-all   "
           } `}
         >
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2">

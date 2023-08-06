@@ -4,7 +4,7 @@ import { BsMessenger } from "react-icons/bs";
 
 function Home() {
   return (
-    <div className="h-screen bg-slate-100 ">
+    <div className="h-screen bg-slate-100 dark:bg-slate-900 ">
       {/* <div className="max-w-screen-lg m-auto py-24">
         <div className="flex flex-col px-4">
           <h1 className="uppercase font-bold text-2xl">Jeremiah A. Monfiel</h1>
