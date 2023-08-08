@@ -2,6 +2,8 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsMessenger } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
+import programmer from "../../../public/programmer.svg"
+
 import {
   BiLogoJavascript,
   BiLogoTailwindCss,
@@ -69,7 +71,7 @@ function Home() {
           </div>
         </div>
         <div className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1  ">
-          <img src="public/programmer.svg" alt="image"></img>
+          <img src={programmer} alt="image"></img>
         </div>
       </div>
     </div>
