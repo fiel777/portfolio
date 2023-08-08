@@ -1,64 +1,77 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsMessenger } from "react-icons/bs";
+import { FaCss3Alt } from "react-icons/fa";
+import {
+  BiLogoJavascript,
+  BiLogoTailwindCss,
+  BiLogoReact,
+} from "react-icons/bi";
+import { SiStyledcomponents } from "react-icons/si";
 
 function Home() {
   return (
-    <div className="h-screen bg-slate-100 dark:bg-slate-900 ">
-      {/* <div className="max-w-screen-lg m-auto py-24">
-        <div className="flex flex-col px-4">
-          <h1 className="uppercase font-bold text-2xl">Jeremiah A. Monfiel</h1>
-          <h2 className="tracking-widest text-base my-4 font-normal">
+    <div className="dark:bg-slate-900 bg-slate-100  dark:text-white font-primary ">
+      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 lg:pb-48  flex flex-col items-center  lg:gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center xl:gap-4">
+        <div className="flex flex-col lg:px-8 px-4 md:px-8   w-full xl:flex-1   ">
+          <h1 className="uppercase font-semibold md:font-bold text-3xl md:text-5xl text-start">
+            Jeremiah Monfiel
+          </h1>
+          <h2 className="tracking-widest my-4 text-sm  font-normal md:text-base md:font-medium">
             Front End Developer
           </h2>
-          <p className="text-sm leading-8 font-light">
-            A 23-year-old front-end web developer in the Philippines. I
-            specialize in building responsive web applications using React.
+          <p className="text-sm leading-8 font-light md:text-base ">
+            Hi, I am Jeremiah Monfiel. A passionate front-end developer based in
+            Philippines. My area of expertise revolves around creating
+            responsive web applications using the React framework.
           </p>
-          <ul className="flex gap-4 my-4 sm:text-lg lg:text-xl">
-            <li>
+          <ul className="flex gap-4 my-6 md:my-8 sm:text-lg md:text-xl lg:text-xl e">
+            <li className="hover:scale-125 transition duration-200">
               <a href="">
                 <AiFillGithub />
               </a>
             </li>
-            <li>
+            <li className="hover:scale-125 transition duration-200 text-blue-500 dark:text-white">
               <a href="">
                 <AiFillLinkedin />
               </a>
             </li>
-            <li>
+            <li className="hover:scale-125 transition duration-200 text-blue-600 dark:text-white ">
               <a href="">
                 <BsMessenger />
               </a>
             </li>
           </ul>
-          <div className=" items-center py-8 flex flex-col ">
-            <span className=" text-center border-b-2 font-medium text-base pb-2 border-slate-800">
+          <div className=" items-center flex flex-col  my-4 xl:flex-row  ">
+            <span className=" border-b-2 font-medium text-sm pb-2 border-slate-800 dark:border-slate-50 md:text-base xl:w-1/4 xl:border-r-2 xl:border-b-0 xl:pb-0">
               Tech Stack
             </span>
-            <ul className=" grid grid-flow-col grid-rows-2 gap-4 w-full justify-center  text-3xl text-orange-600 mt-6 ">
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
+            <ul className=" flex flex-wrap w-[calc(100%-2rem)] sm:w-full gap-8 sm:gap-6  justify-center  text-3xl  mt-8 xl:mt-0 ">
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-orange-400">
                 <AiFillHtml5 />
               </li>
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
-                <AiFillHtml5 />
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-blue-400">
+                <FaCss3Alt />
               </li>
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
-                <AiFillHtml5 />
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-yellow-400">
+                <BiLogoJavascript />
               </li>
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
-                <AiFillHtml5 />
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-blue-400">
+                <BiLogoReact />
               </li>
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
-                <AiFillHtml5 />
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-blue-400">
+                <BiLogoTailwindCss />
               </li>
-              <li className="h-12 w-12 bg-white rounded-full items-center flex justify-center shadow-md">
-                <AiFillHtml5 />
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-rose-600">
+                <SiStyledcomponents />
               </li>
             </ul>
           </div>
         </div>
-      </div> */}
+        <div className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1  ">
+          <img src="src/assets/programmer.svg" alt="image"></img>
+        </div>
+      </div>
     </div>
   );
 }
