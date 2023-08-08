@@ -69,7 +69,7 @@ function Home() {
           </div>
         </div>
         <div className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1  ">
-          <img src="src/assets/programmer.svg" alt="image"></img>
+          <img src="public/programmer.svg" alt="image"></img>
         </div>
       </div>
     </div>
