@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsMessenger } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
-import programmer from "../../../public/programmer.svg"
+import programmer from "/programmer.svg"
 
 import {
   BiLogoJavascript,

@@ -3,7 +3,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const data = [
   {
-    imageUrl: "src/assets/glmweb.webp",
+    imageUrl: "/glmweb.webp",
     title: "GLM Security Training Center",
     description: ` It is a school website built with Tailwind , ReactJS , React
     Slicker , Cloudinary and Facebook Chat Plugin.`,
@@ -16,7 +16,7 @@ const data = [
   },
 
   {
-    imageUrl: "src/assets/glmweb.webp",
+    imageUrl: "/glmweb.webp",
     title: "GLM Security Training Center",
     description: ` It is a school website built with Tailwind , ReactJS , React
     Slicker , Cloudinary and Facebook Chat Plugin.`,
