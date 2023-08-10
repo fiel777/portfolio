@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
-import { BsMessenger } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
 import programmer from "/programmer.svg"
 
@@ -15,7 +15,7 @@ function Home() {
   return (
     <div className="dark:bg-slate-900 bg-slate-100  dark:text-white font-primary ">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 lg:pb-48  flex flex-col items-center  lg:gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center xl:gap-4">
-        <div className="flex flex-col lg:px-8 px-4 md:px-8   w-full xl:flex-1   ">
+        <div className="flex flex-col lg:px-8 px-4 md:px-8   w-full xl:flex-1 xl:h-full   ">
           <h1 className="uppercase font-semibold md:font-bold text-3xl md:text-5xl text-start">
             Jeremiah Monfiel
           </h1>
@@ -40,7 +40,7 @@ function Home() {
             </li>
             <li className="hover:scale-125 transition duration-200 text-blue-600 dark:text-white ">
               <a href="">
-                <BsMessenger />
+                <BsFacebook />
               </a>
             </li>
           </ul>
@@ -70,8 +70,8 @@ function Home() {
             </ul>
           </div>
         </div>
-        <div className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1  ">
-          <img src={programmer} alt="image"></img>
+        <div className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1   ">
+          <img src={programmer} className="w-full h-full" alt="image"></img>
         </div>
       </div>
     </div>

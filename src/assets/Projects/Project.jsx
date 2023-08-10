@@ -1,66 +1,108 @@
 import React from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-
+import { AiFillGithub } from "react-icons/ai";
 const data = [
   {
     imageUrl: "/glmweb.webp",
     title: "GLM Security Training Center",
-    description: ` It is a school website built with Tailwind , ReactJS , React
+    description: ` a school website built with TailwindCSS , ReactJS , React
     Slicker , Cloudinary and Facebook Chat Plugin.`,
-
+    websiteSrc: "https://glmsecuritytrainingcenter.com",
+ 
     icon: [
       {
-        github: <BsBoxArrowUpRight size={20} />,
+        github: "Private Repo",
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      
       },
     ],
   },
 
   {
-    imageUrl: "/glmweb.webp",
-    title: "GLM Security Training Center",
-    description: ` It is a school website built with Tailwind , ReactJS , React
-    Slicker , Cloudinary and Facebook Chat Plugin.`,
-
+    imageUrl: "/strikewing.webp",
+    title: "Strike Wing Aviation Center",
+    description: `  A private school website built with Styled Components , ReactJS , React
+    Slicker and Cloudinary.`,
+    websiteSrc: "https://strikewingaviation.com",
+  
     icon: [
       {
-        github: <BsBoxArrowUpRight size={20} />,
+        github: "Private Repo",
+        arrowRight: <BsBoxArrowUpRight size={20} />,
       },
     ],
   },
+
+  {
+    imageUrl: "/beshify.webp",
+    title: "Beshify App",
+    description: `The app that brings emoji magic to your text, built with ReactJS , Tailwind and React Hot Toast. `,
+    websiteSrc: "https://beshyapp.vercel.app",
+    githubSrc: "https://github.com/fiel777/beshyapp",
+    icon: [
+      {
+        github: <AiFillGithub size={20} />,
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },
+    ],
+  },
+
+  {
+    imageUrl: "/rmgm.webp",
+    title: "Faculty Loading With Attendance System",
+    description: `This application is a windows form built with C# , SqlLocalDB  and Guna UI framework. `,
+    websiteSrc: "https://beshyapp.vercel.app",
+  
+    icon: [
+      {
+        github: "Private Repo",
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },  
+    ],
+  },
+
+  
 ];
 
 function Project() {
   return (
-    <div className="dark:bg-slate-800 bg-slate-100  dark:text-white font-primary">
-      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:py-80">
-        <div className="px-4 flex flex-col gap-8    ">
-          <h1 className="uppercase font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20">
+    <div className="dark:bg-slate-900 bg-slate-100  dark:text-white font-primary">
+      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 ">
+        <div className="px-4">
+          <h1 className="uppercase mb-8 font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20">
             Projects
           </h1>
-          {data.map((item, key) => (
-            <div className="relative group " key={key}>
-              <div className="h-[300px] w-full  ">
-                <img
-                  src={item.imageUrl}
-                  className="w-full h-full object-cover rounded-lg "
-                  alt="image"
-                ></img>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b  from-transparent via-transparent to-gray-900"></div>
-              <div className="absolute bottom-0 w-full flex flex-col p-5 text-white ">
-                <h1 className="capitalize text-sm font-bold">{item.title}</h1>
-                <p className="font-light text-xs ">{item.description}</p>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+            {data.map((item, key) => (
+              <div className="relative group " key={key}>
+                <div className="h-[300px] w-full lg:h-[350px] ">
+                  <img
+                    src={item.imageUrl}
+                    className="w-full h-full object-cover rounded-lg "
+                    alt="image"
+                  ></img>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b  from-transparent  to-slate-800  dark:to-slate-950 group"/>
+                <div className="group absolute bottom-0 w-full flex flex-col p-5 text-white opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 lg:group-hover:-translate-y-4">
+                  
+                  <h1 className="capitalize text-sm font-semibold select-none md:text-lg   ">{item.title}</h1>
+                  <p className="font-light text-xs select-none md:text-base ">{item.description}</p>
 
-                {item.icon.map((icons, key) => (
-                  <div className="pt-4" key={key}>
-                    <ul>
-                      <li className="cursor-pointer">{icons.github}</li>
-                    </ul>
-                  </div>
-                ))}
+                  {item.icon.map((icons, key) => (
+                    <div className="pt-4" key={key}>
+                      <ul className="flex gap-4 items-center">
+                        {/* <li className="cursor-pointer text-xs "><a href="#"/>
+                        {icons.github} </li>
+                        <li className="cursor-pointer">{icons.arrowRight}</li> */}
+                        <li className="cursor-pointer text-sm font-light"><a href={item.githubSrc} target="_blank">{icons.github}</a></li>
+                        <li className="cursor-pointer"><a href={item.websiteSrc} target="_blank">{icons.arrowRight}</a></li>
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

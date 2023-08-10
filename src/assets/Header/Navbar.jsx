@@ -21,7 +21,7 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <div className="py-6 shadow-sm font-primary w-full sticky top-0 dark:bg-slate-800 dark:text-white bg-white z-10     ">
+    <div className="py-6 shadow-sm font-primary w-full sticky top-0 dark:bg-slate-800 dark:text-white bg-white z-10  dark:shadow-md   ">
       <div className="flex justify-between px-6 items-center sm:px-12 lg:px-12 max-w-screen-2xl m-auto relative ">
         <h1 className="text-sm font-bold uppercase sm:text-lg lg:text-2xl z-40 cursor-pointer" onClick={()=> console.log('clicked')}>
           fiel
