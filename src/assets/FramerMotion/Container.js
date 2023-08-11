@@ -4,11 +4,36 @@ const FramerContainer = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 0.3,
+      delayChildren: 0.5,
       staggerChildren: 0.2,
     },
   },
 };
+
+const FramerContainerHome = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const FramerContainerStack = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 
 const navItem = {
   hidden: { y: -20, opacity: 0 },
@@ -18,4 +43,24 @@ const navItem = {
   },
 };
 
-export { FramerContainer, navItem };
+
+const homePicture = {
+  hidden: { x: -50, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
+const techItem = {
+  hidden: {x: 0, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
+
+
+
+export { FramerContainer,FramerContainerHome,FramerContainerStack,navItem,techItem,homePicture};
