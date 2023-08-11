@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className="dark:bg-slate-800 bg-white">
-      <div className="max-[425px]:w-[320px]sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:py-96">
+      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:py-96">
         <div className="px-4 flex flex-col items-center lg:flex  lg:items-center lg:justify-center lg:flex-row gap-8 lg:gap-12 xl:gap-20  ">
           <div className="lg:flex-1">
             <h1 className="mb-6 uppercase font-semibold md:font-bold text-3xl md:text-5xl text-start">
