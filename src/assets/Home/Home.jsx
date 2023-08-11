@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
+import {FiFramer} from "react-icons/fi"
 import programmer from "/programmer.svg";
 
 import {
@@ -48,12 +49,13 @@ function Home() {
                 <BsInstagram />
               </a>
             </li>
+            
           </ul>
           <div className=" items-center flex flex-col  my-4 xl:flex-row  ">
             <span className=" border-b-2 font-medium text-sm pb-2 border-slate-800 dark:border-slate-50 md:text-base xl:w-1/4 xl:border-r-2 xl:border-b-0 xl:pb-0">
               Tech Stack
             </span>
-            <ul className=" flex flex-wrap w-[calc(100%-2rem)] sm:w-full gap-8 sm:gap-6  justify-center  text-3xl  mt-8 xl:mt-0 ">
+            <ul className=" flex flex-wrap w-[calc(100%-2rem)] sm:w-full gap-4  justify-center  text-3xl  mt-8 xl:mt-0 ">
               <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-orange-400">
                 <AiFillHtml5 />
               </li>
@@ -71,6 +73,9 @@ function Home() {
               </li>
               <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-rose-600">
                 <SiStyledcomponents />
+              </li>
+              <li className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black">
+                <FiFramer />
               </li>
             </ul>
           </div>

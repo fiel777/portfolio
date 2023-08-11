@@ -91,7 +91,7 @@ function Project() {
                   {item.icon.map((icons, key) => (
                     <div className="pt-4" key={key}>
                       <ul className="flex gap-4 items-center">
-
+                   
                         <li className="cursor-pointer text-sm font-light"><a href={item.githubSrc} target="_blank">{icons.github}</a></li>
                         <li className="cursor-pointer"><a href={item.websiteSrc} target="_blank">{icons.arrowRight}</a></li>
                       </ul>
