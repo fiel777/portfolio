@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
 import programmer from "/programmer.svg";
 
@@ -41,6 +41,11 @@ function Home() {
             <li className="hover:scale-125 transition duration-200 text-blue-600 dark:text-white ">
               <a href="">
                 <BsFacebook />
+              </a>
+            </li>
+            <li className="hover:scale-125 transition duration-200 text-rose-600 dark:text-white ">
+              <a href="">
+                <BsInstagram />
               </a>
             </li>
           </ul>

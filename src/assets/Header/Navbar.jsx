@@ -36,12 +36,12 @@ function Navbar() {
           </button>
         </div>
         <div
-          className={`fixed sm:inset-x-auto transition duration-300 bg-white dark:bg-slate-900  inset-0 sm:absolute sm:bg-slate-900 sm:dark:bg-white sm:dark:text-black  sm:top-[-0.35rem] sm:w-[350px] sm:right-7 sm:h-[430px]   sm:text-white ${
+          className={`fixed sm:inset-x-auto transition duration-300 bg-white rounded-xl dark:bg-slate-900  inset-0 sm:absolute sm:bg-slate-900 sm:dark:bg-white sm:dark:text-black  sm:top-[-0.35rem] sm:w-[350px] sm:right-7 sm:h-[430px]   sm:text-white ${
             bar ? "sm:scale-100 sm:origin-top-right" : "opacity-0 pointer-events-none sm:origin-top-right  sm:scale-x-50 sm:scale-y-[0.4] -z-50   "
           } `}
         >
           <div className="  absolute top-1/3 left-1/2 -translate-x-1/2  ">
-            <ul className={`   flex  justify-center items-center flex-col gap-4  transition ease-out sm:delay-150 duration-300 ${bar ? "translate-y-0" : " translate-y-14  "}`}>
+            <ul className={`   flex  justify-center items-center flex-col gap-4  transition ease-out sm:delay-150 duration-300 ${bar ? "translate-y-0" : " -translate-y-14  "}`}>
               <li className={`text-xl font-medium sm:text-white dark:sm:text-black`}>
                 <a href="">Home</a>
               </li>
