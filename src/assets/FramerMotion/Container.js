@@ -34,6 +34,18 @@ const FramerContainerStack = {
   },
 };
 
+const FramerContainerPicture = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1.9,
+    },
+  },
+};
+
+
 
 const navItem = {
   hidden: { y: -20, opacity: 0 },
@@ -63,4 +75,4 @@ const techItem = {
 
 
 
-export { FramerContainer,FramerContainerHome,FramerContainerStack,navItem,techItem,homePicture};
+export { FramerContainer,FramerContainerHome,FramerContainerPicture,FramerContainerStack,navItem,techItem,homePicture};

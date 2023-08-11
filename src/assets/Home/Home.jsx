@@ -16,6 +16,7 @@ import {
   techItem,
   FramerContainerStack,
   homePicture,
+  FramerContainerPicture,
 } from "../FramerMotion/Container";
 
 import { SiStyledcomponents } from "react-icons/si";
@@ -135,7 +136,7 @@ function Home() {
         </motion.div>
 
         <motion.div
-          variants={FramerContainerStack}
+          variants={FramerContainerPicture}
           initial="hidden"
           animate="visible"
           className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1   "
@@ -147,6 +148,8 @@ function Home() {
             alt="image"
           ></motion.img>
         </motion.div>
+
+
       </div>
     </div>
   );
