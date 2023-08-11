@@ -66,7 +66,7 @@ const data = [
 
 function Project() {
   return (
-    <div className="dark:bg-slate-900 bg-slate-100  dark:text-white font-primary">
+    <div className="dark:bg-slate-900  ">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 ">
         <div className="px-4">
           <h1 className="uppercase mb-8 font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20">
@@ -82,7 +82,7 @@ function Project() {
                     alt="image"
                   ></img>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b  from-transparent  to-slate-800  dark:to-slate-950 group"/>
+                <div className="absolute inset-0 bg-gradient-to-b  from-transparent  to-slate-700 via-transparent/30  dark:to-slate-800 group"/>
                 <div className="group absolute bottom-0 w-full flex flex-col p-5 text-white opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 lg:group-hover:-translate-y-4">
                   
                   <h1 className="capitalize text-sm font-semibold select-none md:text-lg   ">{item.title}</h1>

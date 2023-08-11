@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
-import programmer from "/programmer.svg"
+import programmer from "/programmer.svg";
 
 import {
   BiLogoJavascript,
@@ -13,7 +13,7 @@ import { SiStyledcomponents } from "react-icons/si";
 
 function Home() {
   return (
-    <div className="dark:bg-slate-900 bg-slate-100  dark:text-white font-primary ">
+    <div className="dark:bg-slate-900">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 lg:pb-48  flex flex-col items-center  lg:gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center xl:gap-4">
         <div className="flex flex-col lg:px-8 px-4 md:px-8   w-full xl:flex-1 xl:h-full   ">
           <h1 className="uppercase font-semibold md:font-bold text-3xl md:text-5xl text-start">
@@ -28,7 +28,7 @@ function Home() {
             responsive web applications using the React framework.
           </p>
           <ul className="flex gap-4 my-6 md:my-8 sm:text-lg md:text-xl lg:text-xl e">
-            <li className="hover:scale-125 transition duration-200">
+            <li className="hover:scale-125 transition duration-200 dark:text-white">
               <a href="">
                 <AiFillGithub />
               </a>
