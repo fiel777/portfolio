@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className=" bg-slate-100 dark:text-white font-primary">
+      <div className=" bg-slate-100  dark:text-white font-primary">
       <Home />
       <About/>
       <Project/>
