@@ -1,8 +1,8 @@
-import React from "react";
+import { React, useRef, useEffect } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import { motion } from "framer-motion";
-import { FramerContainer, Item } from "../FramerMotion/DefaultAnimation";
+import { motion, useInView } from "framer-motion";
+import { FramerContainer, Item } from "../FramerMotion/ProjectAnimation";
 const data = [
   {
     imageUrl: "/glmweb.webp",
@@ -64,26 +64,25 @@ const data = [
 ];
 
 function Project() {
+  const ref = useRef(null);
+
   return (
-    <div className="dark:bg-slate-900  " id="project">
-      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 ">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={FramerContainer}
-          viewport={{ once: true }}
-          className="px-4"
-        >
+    <div className="dark:bg-slate-900  " id="project" ref={ref}>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={FramerContainer}
+        viewport={{ once: true, amount: 0.8, margin: "200px" }}
+        className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-12 md:py-40 "
+      >
+        <div className="px-4">
           <motion.h1
             variants={Item}
-            className="uppercase mb-8 font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20"
+            className="uppercase my-6 font-semibold sm:mb-10 sm:mt-0 md:font-bold text-3xl md:text-5xl text-start xl:mb-20"
           >
             Projects
           </motion.h1>
-          <div
-        
-            className="grid grid-cols-1 gap-8 lg:grid-cols-2 "
-          >
+          <div className="grid grid-cols-1  gap-8 lg:grid-cols-2 ">
             {data.map((item, key) => (
               <motion.div variants={Item} className="relative group " key={key}>
                 <div className="h-[300px] w-full lg:h-[350px] ">
@@ -122,8 +121,8 @@ function Project() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
