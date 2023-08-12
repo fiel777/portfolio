@@ -65,7 +65,7 @@ const data = [
 
 function Project() {
   return (
-    <div className="dark:bg-slate-900  ">
+    <div className="dark:bg-slate-900  " id="project">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 ">
         <motion.div
           initial="hidden"
@@ -74,14 +74,14 @@ function Project() {
           viewport={{ once: true }}
           className="px-4"
         >
-          <motion.h1 variants={Item} className="uppercase mb-8 font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20">
+          <motion.h1
+            variants={Item}
+            className="uppercase mb-8 font-semibold md:font-bold text-3xl md:text-5xl text-start xl:mb-20"
+          >
             Projects
           </motion.h1>
           <div
-            initial="hidden"
-            whileInView="visible"
-            variants={FramerContainer}
-            viewport={{ once: true }}
+        
             className="grid grid-cols-1 gap-8 lg:grid-cols-2 "
           >
             {data.map((item, key) => (

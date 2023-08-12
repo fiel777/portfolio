@@ -2,15 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FramerContainer, Item } from "../FramerMotion/DefaultAnimation";
 
+
 function About() {
+  
   return (
-    <div className="dark:bg-slate-800 bg-white">
-      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:py-96">
+    <div className="dark:bg-slate-800 bg-white " id="about">
+      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:pt-[22rem] lg:pb-[25rem]">
         <motion.div
           initial="hidden"
           whileInView="visible"
           variants={FramerContainer}
-          viewport={{ once: true , }}
+          viewport={{ once: true }}
           className="px-4 flex flex-col items-center lg:flex  lg:items-center lg:justify-center lg:flex-row gap-8 lg:gap-12 xl:gap-20  "
         >
           <div className="lg:flex-1">

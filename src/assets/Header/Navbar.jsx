@@ -6,8 +6,8 @@ import { TfiClose } from "react-icons/tfi";
 import { motion } from "framer-motion";
 import { FramerContainer, navItem } from "../FramerMotion/NavAnimation";
 
-function Navbar() {
 
+function Navbar() {
   const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")));
   const [bar, setbar] = useState();
 
@@ -83,16 +83,27 @@ function Navbar() {
               <li
                 className={`text-xl font-medium sm:text-white dark:sm:text-black`}
               >
-                <a href="">Home</a>
+                <a
+                  href="#home"
+                  onClick={() => setbar(!bar)}
+                >
+                  Home
+                </a>
               </li>
               <li className="text-xl font-medium sm:text-white dark:sm:text-black ">
-                <a href="">About</a>
+                <a href="#about" onClick={() => setbar(!bar)}>
+                  About
+                </a>
               </li>
               <li className="text-xl font-medium sm:text-white dark:sm:text-black">
-                <a href="">Project</a>
+                <a href="#project" onClick={() => setbar(!bar)}>
+                  Project
+                </a>
               </li>
               <li className="text-xl font-medium sm:text-white dark:sm:text-black ">
-                <a href="">Contact</a>
+                <a href="#contact" onClick={() => setbar(!bar)}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeremiah Monfiel | Portfolio</title>
   </head>
-  <!-- <script>
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script> -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script>
+    history.scrollRestoration = "manual";
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+  </script>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

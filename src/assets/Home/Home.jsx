@@ -23,8 +23,8 @@ import { SiStyledcomponents } from "react-icons/si";
 
 function Home() {
   return (
-    <div className="dark:bg-slate-900">
-      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 lg:pb-48  flex flex-col items-center  lg:gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center xl:gap-4">
+    <div className="dark:bg-slate-900" id="home">
+      <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 lg:pb-52  flex flex-col items-center  lg:gap-4 lg:flex lg:flex-row lg:justify-center lg:items-center xl:gap-4">
         <motion.div
           variants={FramerContainerHome}
           initial="hidden"
@@ -71,7 +71,7 @@ function Home() {
               </a>
             </li>
             <li className="hover:scale-125 transition duration-200 text-rose-600 dark:text-white ">
-              <a href="https://www.instagram.com/" target="_blank">
+              <a href="https://www.instagram.com/miahmonfiel" target="_blank">
                 <BsInstagram />
               </a>
             </li>
