@@ -1,14 +1,3 @@
-const FramerContainer = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.2,
-    },
-  },
-};
 
 const FramerContainerHome = {
   hidden: { opacity: 1, scale: 0 },
@@ -46,7 +35,6 @@ const FramerContainerPicture = {
 };
 
 
-
 const navItem = {
   hidden: { y: -20, opacity: 0 },
   visible: {
@@ -55,8 +43,7 @@ const navItem = {
   },
 };
 
-
-const homePicture = {
+const PictureItem = {
   hidden: { x: -50, opacity: 0 },
   visible: {
     x: 0,
@@ -75,4 +62,4 @@ const techItem = {
 
 
 
-export { FramerContainer,FramerContainerHome,FramerContainerPicture,FramerContainerStack,navItem,techItem,homePicture};
+export { FramerContainerHome,FramerContainerPicture,FramerContainerStack,navItem,techItem,PictureItem};

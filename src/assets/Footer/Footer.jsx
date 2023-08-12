@@ -4,9 +4,9 @@ import { BsFacebook,BsInstagram} from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="dark:bg-white bg-slate-800 text-white dark:text-black">
+    <div className="dark:bg-white bg-slate-900 text-white dark:text-black">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20">
-        <div className="flex items-center justify-center flex-col gap-8 lg:flex-row lg:justify-around xl:justify-between">
+        <div className="flex flex-col-reverse items-center justify-center  gap-8 lg:flex-row-reverse lg:justify-around xl:justify-between">
           <h1 className="font-light text-sm md:text-base ">
             © 2023 Jeremiah Monfiel
           </h1>

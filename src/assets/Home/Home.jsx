@@ -12,12 +12,12 @@ import {
 import { motion } from "framer-motion";
 import {
   FramerContainerHome,
+  FramerContainerStack,
+  FramerContainerPicture,
   navItem,
   techItem,
-  FramerContainerStack,
-  homePicture,
-  FramerContainerPicture,
-} from "../FramerMotion/Container";
+  PictureItem,
+} from "../FramerMotion/HomeAnimation";
 
 import { SiStyledcomponents } from "react-icons/si";
 
@@ -56,22 +56,22 @@ function Home() {
             className="flex gap-4 my-6 md:my-8 sm:text-lg md:text-xl lg:text-xl e"
           >
             <li className="hover:scale-125 transition duration-200 dark:text-white">
-              <a href="">
+              <a href="https://github.com/fiel777" target="_blank">
                 <AiFillGithub />
               </a>
             </li>
             <li className="hover:scale-125 transition duration-200 text-blue-500 dark:text-white">
-              <a href="">
+              <a href="https://www.linkedin.com/in/jeremiah-monfiel-8201b023b/" target="_blank">
                 <AiFillLinkedin />
               </a>
             </li>
             <li className="hover:scale-125 transition duration-200 text-blue-600 dark:text-white ">
-              <a href="">
+              <a href="https://www.facebook.com/mayamonfiel/" target="_blank">
                 <BsFacebook />
               </a>
             </li>
             <li className="hover:scale-125 transition duration-200 text-rose-600 dark:text-white ">
-              <a href="">
+              <a href="https://www.instagram.com/" target="_blank">
                 <BsInstagram />
               </a>
             </li>
@@ -142,7 +142,7 @@ function Home() {
           className="w-[300px] h-[-300px] min-[640px]:w-[500px] lg:w-full lg:mb-32 xl:mb-0 xl:flex-1   "
         >
           <motion.img
-            variants={homePicture}
+            variants={PictureItem}
             src={programmer}
             className="w-full h-full"
             alt="image"

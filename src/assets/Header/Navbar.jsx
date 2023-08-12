@@ -4,7 +4,7 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
 import { motion } from "framer-motion";
-import { FramerContainer, navItem } from "../FramerMotion/Container";
+import { FramerContainer, navItem } from "../FramerMotion/NavAnimation";
 
 function Navbar() {
 
