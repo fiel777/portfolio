@@ -3,6 +3,8 @@ import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FramerContainer, Item } from "../FramerMotion/DefaultAnimation";
 
+
+
 function Contact() {
   return (
     <div className="dark:bg-slate-800 bg-white" id="contact">

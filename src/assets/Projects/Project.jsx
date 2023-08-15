@@ -1,16 +1,21 @@
-import { React, useRef, useEffect } from "react";
+import { React, useRef, useEffect, useState } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { FramerContainer, Item } from "../FramerMotion/ProjectAnimation";
+import { TfiClose } from "react-icons/tfi";
+import { BsArrowRight } from "react-icons/bs";
+import Navbar from "../Header/Navbar";
+import ProjectModal from "./ProjectModal";
+
 const data = [
   {
     imageUrl: "/glmweb.webp",
     title: "GLM Security Training Center",
     description: ` a school website built with TailwindCSS , ReactJS , React
-    Slicker , Cloudinary and Facebook Chat Plugin.`,
+      Slicker , Cloudinary and Facebook Chat Plugin.`,
     websiteSrc: "https://glmsecuritytrainingcenter.com",
-
+    youtubeSrc:"https://www.youtube.com/embed/j-lZbYlT3_c",
     icon: [
       {
         github: "Private Repo",
@@ -25,6 +30,7 @@ const data = [
     description: `  A private school website built with Styled Components , ReactJS , React
     Slicker and Cloudinary.`,
     websiteSrc: "https://strikewingaviation.com",
+    youtubeSrc: "https://www.youtube-nocookie.com/embed/CmRvnDGsHPk",
 
     icon: [
       {
@@ -40,6 +46,7 @@ const data = [
     description: `The app that brings emoji magic to your text, built with ReactJS , Tailwind and React Hot Toast. `,
     websiteSrc: "https://beshyapp.vercel.app",
     githubSrc: "https://github.com/fiel777/beshyapp",
+    youtubeSrc: "https://www.youtube.com/embed/hJimzqnvsbY",
     icon: [
       {
         github: <AiFillGithub size={20} />,
@@ -53,6 +60,8 @@ const data = [
     title: "Faculty Loading With Attendance System",
     description: `This application is a windows form built with C# , SqlLocalDB  and Guna UI framework. `,
     websiteSrc: "https://beshyapp.vercel.app",
+    youtubeSrc: "https://www.youtube.com/embed/WGo4r6nfxCk",
+    videoType: "video",
 
     icon: [
       {
@@ -64,10 +73,24 @@ const data = [
 ];
 
 function Project() {
-  const ref = useRef(null);
+
+  const [open, setOpen] = useState(false);
+  const [element, setElement] = useState({});
+
+  useEffect(() => {
+    open
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflowY = "scroll");
+  }, [open]);
+
+  const handleButtonClick = () => {
+    setOpen(false);
+  };
+
+ 
 
   return (
-    <div className="dark:bg-slate-900  " id="project" ref={ref}>
+    <div className="dark:bg-slate-900  " id="project" >
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -83,8 +106,8 @@ function Project() {
             Projects
           </motion.h1>
           <div className="grid grid-cols-1  gap-8 lg:grid-cols-2 ">
-            {data.map((item, key) => (
-              <motion.div variants={Item} className="relative group " key={key}>
+            {data.map((item, i) => (
+              <motion.div variants={Item} className="relative group " key={i}>
                 <div className="h-[300px] w-full lg:h-[350px] ">
                   <img
                     src={item.imageUrl}
@@ -92,7 +115,7 @@ function Project() {
                     alt="image"
                   ></img>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b  from-transparent  to-slate-700 via-transparent/30  dark:to-slate-800 group" />
+                <div className="absolute inset-0 bg-gradient-to-b  from-transparent  to-slate-700 via-transparent/30  dark:to-slate-500 dark:via-transparent/20 group" />
                 <div className="group absolute bottom-0 w-full flex flex-col p-5 text-white opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 lg:group-hover:-translate-y-4">
                   <h1 className="capitalize text-sm font-semibold select-none md:text-lg   ">
                     {item.title}
@@ -109,10 +132,13 @@ function Project() {
                             {icons.github}
                           </a>
                         </li>
-                        <li className="cursor-pointer">
-                          <a href={item.websiteSrc} target="_blank">
-                            {icons.arrowRight}
-                          </a>
+                        <li
+                          className="cursor-pointer"
+                          onClick={() =>
+                            setOpen(!open) || (setElement(i))
+                          }
+                        >
+                          {icons.arrowRight}
                         </li>
                       </ul>
                     </div>
@@ -123,6 +149,13 @@ function Project() {
           </div>
         </div>
       </motion.div>
+
+      {open && (
+        <ProjectModal
+          closeModal={handleButtonClick}
+          data={data[element]}
+        ></ProjectModal>
+      )}
     </div>
   );
 }

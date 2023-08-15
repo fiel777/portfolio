@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FramerContainer, Item } from "../FramerMotion/DefaultAnimation";
 
-
 function About() {
-  
   return (
     <div className="dark:bg-slate-800 bg-white " id="about">
       <div className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-20 md:py-60 l lg:pt-[22rem] lg:pb-[25rem]">
@@ -26,31 +24,30 @@ function About() {
               variants={Item}
               className="text-sm leading-8 font-light md:text-base text-start lg:text-justify"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              veritatis atque laborum ut possimus, natus dolorem consequatur
-              debitis. Quae dolore, adipisci, exercitationem eveniet debitis
-              illo voluptates iusto magni blanditiis a vero quod fugiat facere.
-              Consectetur minima consequatur nisi, labore saepe sed libero
-              tempore dolores. Vitae quo a sint esse rem!
+              I am 23 years old and recently graduated from college, obtaining a
+              bachelor's degree in Information Technology from STI Las Pinas
+              College. Presently, my main focus revolves around responsive and
+              visually appealing interfaces, while also maintaining a consistent
+              commitment to learning about modern technologies. I am actively
+              exploring job opportunities that can facilitate my growth as a
+              front-end developer.
             </motion.p>
           </div>
-          <div className="lg:flex-1">
+          <div className="lg:flex-1 lg:relative">
             <motion.h1
               variants={Item}
-              className="mb-6 uppercase text-sm  font-normal md:text-base md:font-medium lg:my-6"
+              className="mb-6 uppercase text-sm  font-normal md:text-base md:font-medium lg:my-0 lg:absolute lg:bottom-[9rem] xl:bottom-[6.5rem]"
             >
               Technical
             </motion.h1>
             <motion.p
               variants={Item}
-              className="text-sm leading-8 font-light md:text-base text-start lg:text-justify "
+              className="text-sm leading-8 font-light md:text-base text-start lg:text-justify"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              veritatis atque laborum ut possimus, natus dolorem consequatur
-              debitis. Quae dolore, adipisci, exercitationem eveniet debitis
-              illo voluptates iusto magni blanditiis a vero quod fugiat facere.
-              Consectetur minima consequatur nisi, labore saepe sed libero
-              tempore dolores. Vitae quo a sint esse rem!
+              Currently, I'm utilizing React.js and Tailwind CSS while also
+              familiarizing myself with HTML, JavaScript, and CSS. Additionally,
+              I'm in the process of learning about other UI libraries and the
+              MERN stack.
             </motion.p>
           </div>
         </motion.div>
