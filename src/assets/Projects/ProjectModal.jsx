@@ -16,6 +16,12 @@ function ProjectModal({ closeModal, data }) {
     };
   }, []);
 
+  const getUrl = () => {
+    const url = document.querySelector("a");
+    url.getAttribute("href");
+    url.setAttribute("href", data.websiteSrc);
+  };
+
   return (
     <div className=" bg-white/50 dark:bg-slate-600/50  inset-0 fixed text-black z-50 text-sm flex flex-col items-center justify-center ">
       <div
@@ -44,13 +50,12 @@ function ProjectModal({ closeModal, data }) {
         </div>
 
         {data.videoType !== "video" ? (
-          <div className="w-[170px] h-[40px] md:w[200px]  border relative border-black dark:bg-white dark:border-white   flex items-center justify-center gap-4 group text-black z-10 hover:text-white cursor-pointer ">
+          <div
+            className="w-[170px] h-[40px] md:w[200px]  border relative border-black dark:bg-white dark:border-white   flex items-center justify-center gap-4 group text-black z-10 hover:text-white cursor-pointer"
+            onClick={()=>  window.open(data.websiteSrc, '_blank')}
+          >
             <div className="flex justify-center items-center gap-4 absolute inset-0 w-[10px]  bg-black dark:bg-slate-800  group-hover:w-full transition-all duration-500 ease-out -z-10"></div>
-            <span className="text-sm ">
-              <a href={data.websiteSrc} target="_blank">
-                Proceed to Site
-              </a>
-            </span>
+            <span className="text-sm ">Proceed to Site</span>
             <BsArrowRight size={16} />
           </div>
         ) : (
