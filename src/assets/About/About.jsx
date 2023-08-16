@@ -44,10 +44,10 @@ function About() {
               variants={Item}
               className="text-sm leading-8 font-light md:text-base text-start lg:text-justify"
             >
-              Currently, I'm utilizing React.js and Tailwind CSS while also
-              familiarizing myself with HTML, JavaScript, and CSS. Additionally,
-              I'm in the process of learning about other UI libraries and the
-              MERN stack.
+              I'm currently focused on tasks like connecting APIs, using React
+              Hooks, and developing the back-end. Furthermore, for front-end
+              development, I consistently aim to stay updated with the latest
+              libraries.
             </motion.p>
           </div>
         </motion.div>
