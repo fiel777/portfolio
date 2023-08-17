@@ -62,7 +62,7 @@ function Navbar() {
             {bar ? (
               <TfiClose className=" sm:text-white sm:dark:text-black" />
             ) : (
-              <FaBarsStaggered className="" />
+              <FaBarsStaggered/>
             )}
           </motion.button>
         </motion.div>

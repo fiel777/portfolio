@@ -16,11 +16,7 @@ function ProjectModal({ closeModal, data }) {
     };
   }, []);
 
-  const getUrl = () => {
-    const url = document.querySelector("a");
-    url.getAttribute("href");
-    url.setAttribute("href", data.websiteSrc);
-  };
+
 
   return (
     <div className=" bg-white/50 dark:bg-slate-600/50  inset-0 fixed text-black z-50 text-sm flex flex-col items-center justify-center ">
@@ -49,7 +45,7 @@ function ProjectModal({ closeModal, data }) {
           </div>
         </div>
 
-        {data.videoType !== "video" ? (
+        {data.srcLink !== "web-link" ? (
           <div
             className="w-[170px] h-[40px] md:w[200px]  border relative border-black dark:bg-white dark:border-white   flex items-center justify-center gap-4 group text-black z-10 hover:text-white cursor-pointer"
             onClick={()=>  window.open(data.websiteSrc, '_blank')}

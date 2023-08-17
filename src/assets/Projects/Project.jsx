@@ -61,7 +61,7 @@ const data = [
     description: `This application is a windows form built with C# , SqlLocalDB  and Guna UI framework. `,
     websiteSrc: "https://beshyapp.vercel.app",
     youtubeSrc: "https://www.youtube.com/embed/WGo4r6nfxCk",
-    videoType: "video",
+    srcLink: "web-link",
 
     icon: [
       {
