@@ -3,9 +3,6 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { FramerContainer, Item } from "../FramerMotion/ProjectAnimation";
-import { TfiClose } from "react-icons/tfi";
-import { BsArrowRight } from "react-icons/bs";
-import Navbar from "../Header/Navbar";
 import ProjectModal from "./ProjectModal";
 
 const data = [
@@ -15,7 +12,7 @@ const data = [
     description: ` a school website built with TailwindCSS , ReactJS , React
       Slicker , Cloudinary and Facebook Chat Plugin.`,
     websiteSrc: "https://glmsecuritytrainingcenter.com",
-    youtubeSrc:"https://www.youtube.com/embed/j-lZbYlT3_c",
+    youtubeSrc: "https://www.youtube.com/embed/j-lZbYlT3_c",
     icon: [
       {
         github: "Private Repo",
@@ -70,10 +67,24 @@ const data = [
       },
     ],
   },
+
+  {
+    imageUrl: "/reese.webp",
+    title: "Project clone",
+    description: `Inspired of Reese Lansangan shop built with ReactJS and TailwindCSS   `,
+    websiteSrc: "https://reese-clone.vercel.app",
+    youtubeSrc: "https://www.youtube.com/embed/2Uisy-kd7uE",
+    githubSrc: "https://github.com/fiel777/reese-clone",
+    icon: [
+      {
+        github: <AiFillGithub size={20} />,
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },
+    ],
+  },
 ];
 
 function Project() {
-
   const [open, setOpen] = useState(false);
   const [element, setElement] = useState({});
 
@@ -87,10 +98,8 @@ function Project() {
     setOpen(false);
   };
 
- 
-
   return (
-    <div className="dark:bg-slate-900  " id="project" >
+    <div className="dark:bg-slate-900  " id="project">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -134,9 +143,7 @@ function Project() {
                         </li>
                         <li
                           className="cursor-pointer"
-                          onClick={() =>
-                            setOpen(!open) || (setElement(i))
-                          }
+                          onClick={() => setOpen(!open) || setElement(i)}
                         >
                           {icons.arrowRight}
                         </li>
