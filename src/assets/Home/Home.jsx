@@ -41,7 +41,7 @@ function Home() {
             variants={navItem}
             className="tracking-widest my-4 text-sm  font-normal md:text-base md:font-medium"
           >
-            Jr. Front End Developer
+            Front End Developer
           </motion.h2>
           <motion.p
             variants={navItem}
