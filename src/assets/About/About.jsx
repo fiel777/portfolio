@@ -47,7 +47,7 @@ function About() {
               I'm currently focused on tasks like connecting APIs, using React
               Hooks, and developing the back-end. Furthermore, for front-end
               development, I consistently aim to stay updated with the latest
-              libraries.
+              libraries and writing some tests in program's requirements using chai.
             </motion.p>
           </div>
         </motion.div>
