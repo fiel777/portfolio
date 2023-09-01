@@ -4,9 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        primary: ['Poppins', 'sans-serif'],
-      },
+     fontFamily: {
+      primary: ["Montserrat","sans-serif"]
+     }
     },
   },
   plugins: [],
