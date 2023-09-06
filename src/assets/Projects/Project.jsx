@@ -89,7 +89,7 @@ const data = [
     description: `Landing Page built with Vanilla Javascript, HTML and CSS    `,
     websiteSrc: "https://orangestore-pearl.vercel.app/",
     youtubeSrc: "https://www.youtube.com/embed/cm7OVYxbc6M",
-    githubSrc: "https://github.com/fiel777/reese-clone",
+    githubSrc: "https://github.com/fiel777/Landing-Page",
     icon: [
       {
         github: <AiFillGithub size={20} />,
