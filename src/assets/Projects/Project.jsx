@@ -97,6 +97,21 @@ const data = [
       },
     ],
   },
+
+  {
+    imageUrl: "/CrudJS.webp",
+    title: "CRUD",
+    description: `Crud built with Vanilla Javascript, LocalStorage,  HTML and CSS    `,
+    websiteSrc: "https://crud-vanilla-b189ieaj9-fiel777.vercel.app",
+    youtubeSrc: "https://www.youtube.com/embed/XT5fbkEcEh0",
+    githubSrc: "https://github.com/fiel777/crud-vanillaJS",
+    icon: [
+      {
+        github: <AiFillGithub size={20} />,
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },
+    ],
+  },
 ];
 
 function Project() {
