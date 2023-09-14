@@ -1,13 +1,14 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt ,FaNode } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import programmer from "/programmer.svg";
 import {
   BiLogoJavascript,
   BiLogoTailwindCss,
   BiLogoReact,
+  BiLogoJquery,
 } from "react-icons/bi";
 import { motion } from "framer-motion";
 import {
@@ -19,7 +20,7 @@ import {
   PictureItem,
 } from "../FramerMotion/HomeAnimation";
 
-import { SiStyledcomponents } from "react-icons/si";
+import { SiStyledcomponents, SiPhp,SiMysql,SiMongodb } from "react-icons/si";
 
 function Home() {
   return (
@@ -61,7 +62,10 @@ function Home() {
               </a>
             </li>
             <li className="hover:scale-125 transition duration-200 text-blue-500 dark:text-white">
-              <a href="https://www.linkedin.com/in/jeremiah-monfiel-8201b023b/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/jeremiah-monfiel-8201b023b/"
+                target="_blank"
+              >
                 <AiFillLinkedin />
               </a>
             </li>
@@ -80,7 +84,7 @@ function Home() {
             variants={FramerContainerStack}
             initial="hidden"
             animate="visible"
-            className=" items-center flex flex-col  my-4 xl:flex-row  "
+            className=" items-center flex flex-col  my-4 xl:flex-row xl:gap-8  "
           >
             <motion.span
               variants={techItem}
@@ -88,7 +92,7 @@ function Home() {
             >
               Tech Stack
             </motion.span>
-            <ul className=" flex flex-wrap w-[calc(100%-2rem)] sm:w-full gap-4  justify-center  text-3xl  mt-8 xl:mt-0 ">
+            <ul className=" flex flex-wrap w-[calc(100%-2rem)] sm:w-[calc(75%-1rem)] :w-full  gap-4  justify-center  text-3xl  mt-8 xl:mt-0  xl:w-[calc(75%-2rem)] ">
               <motion.li
                 variants={techItem}
                 className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md hover:scale-125 transition duration-200 cursor-pointer text-orange-400"
@@ -125,11 +129,37 @@ function Home() {
               >
                 <SiStyledcomponents />
               </motion.li>
+
               <motion.li
                 variants={techItem}
                 className="h-12 w-12 md:h-15 md:w-15 bg-white rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
               >
                 <FiFramer />
+              </motion.li>
+
+              <motion.li
+                variants={techItem}
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(18,102,109)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+              >
+                <BiLogoJquery />
+              </motion.li>
+              <motion.li
+                variants={techItem}
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(119,123,179)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+              >
+                <SiPhp />
+              </motion.li>
+              <motion.li
+                variants={techItem}
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(0,103,140)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+              >
+                <SiMysql />
+              </motion.li>
+              <motion.li
+                variants={techItem}
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(65,151,50)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+              >
+                <SiMongodb />
               </motion.li>
             </ul>
           </motion.div>
@@ -148,8 +178,6 @@ function Home() {
             alt="image"
           ></motion.img>
         </motion.div>
-
-
       </div>
     </div>
   );

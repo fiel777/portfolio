@@ -134,7 +134,7 @@ function Project() {
         initial="hidden"
         whileInView="visible"
         variants={FramerContainer}
-        viewport={{ once: true, amount: 0.8, margin: "200px" }}
+        viewport={{ once: true, amount: 0.8, margin: "550px" }}
         className="max-[425px]:w-[320px] sm:max-w-2xl lg:max-w-screen-lg xl:max-w-screen-xl m-auto py-12 md:py-40 "
       >
         <div className="px-4">

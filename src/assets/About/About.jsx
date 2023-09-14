@@ -33,13 +33,8 @@ function About() {
               front-end developer.
             </motion.p>
           </div>
-          <div className="lg:flex-1 lg:relative">
-            <motion.h1
-              variants={Item}
-              className="mb-6 uppercase text-sm  font-normal md:text-base md:font-medium lg:my-0 lg:absolute lg:bottom-[9rem] xl:bottom-[6.5rem]"
-            >
-              Technical
-            </motion.h1>
+          <div className="lg:flex-1 pt-6 xl:pt-12">
+           
             <motion.p
               variants={Item}
               className="text-sm leading-8 font-light md:text-base text-start lg:text-justify"
