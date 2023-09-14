@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillHtml5 } from "react-icons/ai";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
-import { FaCss3Alt ,FaNode } from "react-icons/fa";
+import { FaCss3Alt, FaNode } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import programmer from "/programmer.svg";
 import {
@@ -20,7 +20,7 @@ import {
   PictureItem,
 } from "../FramerMotion/HomeAnimation";
 
-import { SiStyledcomponents, SiPhp,SiMysql,SiMongodb } from "react-icons/si";
+import { SiStyledcomponents, SiPhp, SiMysql, SiMongodb } from "react-icons/si";
 
 function Home() {
   return (
@@ -139,25 +139,25 @@ function Home() {
 
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(18,102,109)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(18,102,109)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <BiLogoJquery />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(119,123,179)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(119,123,179)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiPhp />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(0,103,140)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(0,103,140)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiMysql />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(65,151,50)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer text-black"
+                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(65,151,50)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiMongodb />
               </motion.li>

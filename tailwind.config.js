@@ -6,6 +6,13 @@ export default {
     extend: {
      fontFamily: {
       primary: ["Poppins","sans-serif"]
+     },
+     textColor: {
+        jquery : 'rgb(18,102,109)',
+        php : 'rgb(119,123,179)',
+        mysql : 'rgb(18,102,109)',
+        mongoddb : 'rgb(18,102,109)'
+
      }
     },
   },
