@@ -112,6 +112,40 @@ const data = [
       },
     ],
   },
+
+  {
+    imageUrl: "/nexcent.webp",
+    title: "Nexcent",
+    description: `Landing Page built with ReactJS `,
+    websiteSrc: "https://nexcent-n8mfoidkv-fiel777.vercel.app/",
+    youtubeSrc: "https://www.youtube.com/embed/5DD1PeskUSY",
+    githubSrc: "https://github.com/fiel777/nexcent",
+    wsrcLink: "web-link",
+    icon: [
+      {
+        github: <AiFillGithub size={20} />,
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },
+    ],
+  },
+  
+  {
+    imageUrl: "/properties.webp",
+    title: "Properties",
+    description: `Gallery built with React JS `,
+    websiteSrc: "https://properties-hvrbs7wok-fiel777.vercel.app/",
+    youtubeSrc: "https://www.youtube.com/embed/Pgnj8bgoFtk",
+    githubSrc: "https://github.com/fiel777/Properties",
+    wsrcLink: "web-link",
+    icon: [
+      {
+        github: <AiFillGithub size={20} />,
+        arrowRight: <BsBoxArrowUpRight size={20} />,
+      },
+    ],
+  },
+
+  
 ];
 
 function Project() {

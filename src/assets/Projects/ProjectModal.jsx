@@ -17,7 +17,6 @@ function ProjectModal({ closeModal, data }) {
   }, []);
 
 
-
   return (
     <div className=" bg-white/50 dark:bg-slate-600/50  inset-0 fixed text-black z-50 text-sm flex flex-col items-center justify-center ">
       <div
@@ -57,6 +56,8 @@ function ProjectModal({ closeModal, data }) {
         ) : (
           ""
         )}
+
+        
       </div>
     </div>
   );
