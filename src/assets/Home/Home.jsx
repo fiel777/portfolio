@@ -139,25 +139,25 @@ function Home() {
 
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(18,102,109)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
+                className="h-12 w-12 md:h-15 md:w-15 bg-white text-[rgb(18,102,109)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <BiLogoJquery />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(119,123,179)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
+                className="h-12 w-12 md:h-15 md:w-15 bg-white text-[rgb(119,123,179)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiPhp />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(0,103,140)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
+                className="h-12 w-12 md:h-15 md:w-15 bg-white text-[rgb(0,103,140)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiMysql />
               </motion.li>
               <motion.li
                 variants={techItem}
-                className="h-12 w-12 md:h-15 md:w-15 text-[rgb(65,151,50)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
+                className="h-12 w-12 md:h-15 md:w-15 bg-white text-[rgb(65,151,50)] rounded-full items-center flex justify-center shadow-md  hover:scale-125 transition duration-200 cursor-pointer "
               >
                 <SiMongodb />
               </motion.li>
